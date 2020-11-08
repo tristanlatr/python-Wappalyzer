@@ -32,7 +32,7 @@
 
         <span id="partOf">
           Part of <code><a href="Wappalyzer.html" class="code" data-type="Package">Wappalyzer</a></code>
-          <a href="https://github.com/tristanlatr/python-Wappalyzer/tree/3ba1864c236aac22798a371b0d26c84641547316/Wappalyzer/Wappalyzer.py#L23">View Source</a>
+          <a href="https://github.com/tristanlatr/python-Wappalyzer/tree/60ba3c165bbc5412e48ea14d2cb6b5ee57d0fb55/Wappalyzer/Wappalyzer.py#L23">View Source</a>
           <a href="classIndex.html#Wappalyzer.WebPage">(View In Hierarchy)</a>
         </span>
       </div>
@@ -42,8 +42,8 @@
       </div>
 
       <div class="moduleDocstring">
-        <div><p class="pre">Simple representation of a web page, decoupled
-from any particular HTTP library's API.</p></div>
+        <div>Simple representation of a web page, decoupled
+from any particular HTTP library's API.</div>
       </div>
 
       <div id="splitTables">
@@ -88,7 +88,7 @@ from any particular HTTP library's API.</p></div>
     
     <td>Class Method</td>
     <td><a href="Wappalyzer.WebPage.html#new_from_url" class="code" data-type="Class Method">new_from_url</a></td>
-    <td><span>Constructs a new WebPage object for the URL, using the `requests` module to fetch the HTML.</span></td>
+    <td><span>Constructs a new WebPage object for the URL, using the <code>requests</code> module to fetch the HTML.</span></td>
   </tr><tr class="classvariable">
     
     <td>Class Variable</td>
@@ -103,7 +103,7 @@ from any particular HTTP library's API.</p></div>
     
     <td>Class Method</td>
     <td><a href="Wappalyzer.WebPage.html#new_from_response" class="code" data-type="Class Method">new_from_response</a></td>
-    <td><span>Constructs a new WebPage object for the response, using the `BeautifulSoup` module to parse the HTML.</span></td>
+    <td><span>Constructs a new WebPage object for the response, using the <code>BeautifulSoup</code> module to parse the HTML.</span></td>
   </tr><tr class="method private">
     
     <td>Method</td>
@@ -130,7 +130,7 @@ from any particular HTTP library's API.</p></div>
     
     def
     __init__(self, url, html, headers):
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/3ba1864c236aac22798a371b0d26c84641547316/Wappalyzer/Wappalyzer.py#L29">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/60ba3c165bbc5412e48ea14d2cb6b5ee57d0fb55/Wappalyzer/Wappalyzer.py#L29">
       
       (source)
     </a>
@@ -138,15 +138,20 @@ from any particular HTTP library's API.</p></div>
   <div class="docstring functionBody">
     
     
-    <div><p class="pre">Initialize a new WebPage object.
-
-Parameters:
-    - url : str
-      The web page URL.
-    - html : str
-      The web page content (HTML)
-    - headers : dict
-      The HTTP response headers</p></div>
+    <div><p>Initialize a new WebPage object.</p>
+<dl class="rst-docutils">
+<dt>Parameters:</dt>
+<dd><ul class="rst-first rst-last rst-simple">
+<li>url : str
+The web page URL.</li>
+<li>html : str
+The web page content (HTML)</li>
+<li>headers : dict
+The HTTP response headers</li>
+</ul>
+</dd>
+</dl>
+</div>
   </div>
 </div><div class="baseinstancevariable">
   
@@ -158,7 +163,7 @@ Parameters:
   </a>
   <div class="functionHeader">
     url =
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/3ba1864c236aac22798a371b0d26c84641547316/Wappalyzer/Wappalyzer.py#L41">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/60ba3c165bbc5412e48ea14d2cb6b5ee57d0fb55/Wappalyzer/Wappalyzer.py#L41">
       
       (source)
     </a>
@@ -177,7 +182,7 @@ Parameters:
   </a>
   <div class="functionHeader">
     html =
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/3ba1864c236aac22798a371b0d26c84641547316/Wappalyzer/Wappalyzer.py#L42">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/60ba3c165bbc5412e48ea14d2cb6b5ee57d0fb55/Wappalyzer/Wappalyzer.py#L42">
       
       (source)
     </a>
@@ -196,7 +201,7 @@ Parameters:
   </a>
   <div class="functionHeader">
     headers =
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/3ba1864c236aac22798a371b0d26c84641547316/Wappalyzer/Wappalyzer.py#L43">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/60ba3c165bbc5412e48ea14d2cb6b5ee57d0fb55/Wappalyzer/Wappalyzer.py#L43">
       
       (source)
     </a>
@@ -217,7 +222,7 @@ Parameters:
     
     def
     _parse_html(self):
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/3ba1864c236aac22798a371b0d26c84641547316/Wappalyzer/Wappalyzer.py#L52">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/60ba3c165bbc5412e48ea14d2cb6b5ee57d0fb55/Wappalyzer/Wappalyzer.py#L52">
       
       (source)
     </a>
@@ -225,7 +230,7 @@ Parameters:
   <div class="docstring functionBody">
     
     
-    <div><p class="pre">Parse the HTML with BeautifulSoup to find &lt;script&gt; and &lt;meta&gt; tags.</p></div>
+    <div>Parse the HTML with BeautifulSoup to find &lt;script&gt; and &lt;meta&gt; tags.</div>
   </div>
 </div><div class="baseinstancevariable">
   
@@ -237,7 +242,7 @@ Parameters:
   </a>
   <div class="functionHeader">
     parsed_html =
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/3ba1864c236aac22798a371b0d26c84641547316/Wappalyzer/Wappalyzer.py#L56">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/60ba3c165bbc5412e48ea14d2cb6b5ee57d0fb55/Wappalyzer/Wappalyzer.py#L56">
       
       (source)
     </a>
@@ -256,7 +261,7 @@ Parameters:
   </a>
   <div class="functionHeader">
     scripts =
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/3ba1864c236aac22798a371b0d26c84641547316/Wappalyzer/Wappalyzer.py#L57">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/60ba3c165bbc5412e48ea14d2cb6b5ee57d0fb55/Wappalyzer/Wappalyzer.py#L57">
       
       (source)
     </a>
@@ -275,7 +280,7 @@ Parameters:
   </a>
   <div class="functionHeader">
     meta =
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/3ba1864c236aac22798a371b0d26c84641547316/Wappalyzer/Wappalyzer.py#L59">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/60ba3c165bbc5412e48ea14d2cb6b5ee57d0fb55/Wappalyzer/Wappalyzer.py#L59">
       
       (source)
     </a>
@@ -296,7 +301,7 @@ Parameters:
     @classmethod<br />
     def
     new_from_url(cls, url, verify=(True), timeout=10):
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/3ba1864c236aac22798a371b0d26c84641547316/Wappalyzer/Wappalyzer.py#L65">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/60ba3c165bbc5412e48ea14d2cb6b5ee57d0fb55/Wappalyzer/Wappalyzer.py#L65">
       
       (source)
     </a>
@@ -304,13 +309,18 @@ Parameters:
   <div class="docstring functionBody">
     
     
-    <div><p class="pre">Constructs a new WebPage object for the URL,
-using the `requests` module to fetch the HTML.
-
-Parameters:
-    - url : str  
-    - verify: bool  
-    - timeout: int, float  </p></div>
+    <div><p>Constructs a new WebPage object for the URL,
+using the <code>requests</code> module to fetch the HTML.</p>
+<dl class="rst-docutils">
+<dt>Parameters:</dt>
+<dd><ul class="rst-first rst-last rst-simple">
+<li>url : str</li>
+<li>verify: bool</li>
+<li>timeout: int, float</li>
+</ul>
+</dd>
+</dl>
+</div>
   </div>
 </div><div class="baseclassvariable">
   
@@ -322,7 +332,7 @@ Parameters:
   </a>
   <div class="functionHeader">
     connector =
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/3ba1864c236aac22798a371b0d26c84641547316/Wappalyzer/Wappalyzer.py#L94">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/60ba3c165bbc5412e48ea14d2cb6b5ee57d0fb55/Wappalyzer/Wappalyzer.py#L94">
       
       (source)
     </a>
@@ -341,7 +351,7 @@ Parameters:
   </a>
   <div class="functionHeader">
     aiohttp_client_session =
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/3ba1864c236aac22798a371b0d26c84641547316/Wappalyzer/Wappalyzer.py#L95">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/60ba3c165bbc5412e48ea14d2cb6b5ee57d0fb55/Wappalyzer/Wappalyzer.py#L95">
       
       (source)
     </a>
@@ -362,7 +372,7 @@ Parameters:
     @classmethod<br />
     def
     new_from_response(cls, response):
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/3ba1864c236aac22798a371b0d26c84641547316/Wappalyzer/Wappalyzer.py#L100">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/60ba3c165bbc5412e48ea14d2cb6b5ee57d0fb55/Wappalyzer/Wappalyzer.py#L100">
       
       (source)
     </a>
@@ -370,17 +380,22 @@ Parameters:
   <div class="docstring functionBody">
     
     
-    <div><p class="pre">Constructs a new WebPage object for the response,
-using the `BeautifulSoup` module to parse the HTML.
-
-Parameters:
-    - response : requests.Response object</p></div>
+    <div><p>Constructs a new WebPage object for the response,
+using the <code>BeautifulSoup</code> module to parse the HTML.</p>
+<dl class="rst-docutils">
+<dt>Parameters:</dt>
+<dd><ul class="rst-first rst-last rst-simple">
+<li>response : requests.Response object</li>
+</ul>
+</dd>
+</dl>
+</div>
   </div>
 </div>
 
       </div>
       <address>
-        <a href="index.html">API Documentation</a> for <a href="https://github.com/tristanlatr/python-Wappalyzer">python-Wappalyzer</a>, generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a> at 2020-11-08 04:30:36.
+        <a href="index.html">API Documentation</a> for <a href="https://github.com/tristanlatr/python-Wappalyzer">python-Wappalyzer</a>, generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a> 20.7.1 at 2020-11-08 04:59:59.
       </address>
 
     </div>
