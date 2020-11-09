@@ -32,7 +32,7 @@
 
         <span id="partOf">
           Part of <code><a href="Wappalyzer.html" class="code" data-type="Package">Wappalyzer</a></code>
-          <a href="https://github.com/tristanlatr/python-Wappalyzer/tree/9c7e4c12cc174b199d1dcb760c8e8e4614412ee6/Wappalyzer/Wappalyzer.py#L124">View Source</a>
+          <a href="https://github.com/tristanlatr/python-Wappalyzer/tree/b1d6504e100ea428717c7db84bd84fc8f8d4bdb5/Wappalyzer/Wappalyzer.py#L124">View Source</a>
           <a href="classIndex.html#Wappalyzer.Wappalyzer">(View In Hierarchy)</a>
         </span>
       </div>
@@ -43,7 +43,8 @@
 
       <div class="moduleDocstring">
         <div><p>Python Wappalyzer driver.</p>
-<p>Consider the following exemple, it uses the latest technologies file</p>
+<p>Consider the following exemples.</p>
+<p>Here is how you can use the latest technologies file from wappalyzer's git repo:</p>
 <pre class="py-doctest">
 <span class="py-keyword">import</span> requests
 <span class="py-keyword">from</span> Wappalyzer <span class="py-keyword">import</span> Wappalyzer, WebPage
@@ -59,7 +60,7 @@ wappalyzer=Wappalyzer.latest(technologies_file=<span class="py-string">'/tmp/las
 <span class="py-comment"># Create webpage</span>
 webpage=WebPage.new_from_url(<span class="py-string">'http://example.com'</span>)
 <span class="py-comment"># analyze</span>
-results = wappalyzer.analyze_with_categories(webpage)</pre><p>Here is how you can custom request and headers arguments :</p>
+results = wappalyzer.analyze_with_categories(webpage)</pre><p>Here is how you can custom request and headers arguments:</p>
 <pre class="py-doctest">
 <span class="py-keyword">import</span> requests
 <span class="py-keyword">from</span> Wappalyzer <span class="py-keyword">import</span> Wappalyzer, WebPage
@@ -193,7 +194,7 @@ wappalyzer.analyze_with_categories(webpage)</pre></div>
     
     def
     __init__(self, categories, technologies):
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/9c7e4c12cc174b199d1dcb760c8e8e4614412ee6/Wappalyzer/Wappalyzer.py#L162">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/b1d6504e100ea428717c7db84bd84fc8f8d4bdb5/Wappalyzer/Wappalyzer.py#L165">
       
       (source)
     </a>
@@ -202,16 +203,8 @@ wappalyzer.analyze_with_categories(webpage)</pre></div>
     
     
     <div><p>Initialize a new Wappalyzer instance.</p>
-<dl class="rst-docutils">
-<dt>Parameters:</dt>
-<dd><ul class="rst-first rst-last rst-simple">
-<li>categories : dict
-Map of category ids to names, as in technologies.json.</li>
-<li>technologies : dict
-Map of technology names to technology dicts, as in technologies.json.</li>
-</ul>
-</dd>
-</dl>
+<p>:param categories : Map of category ids to names, as in <a href="https://docs.python.org/3/library/json.html#module-json"><code>technologies.json</code></a>.
+:param technologies : Map of technology names to technology dicts, as in <a href="https://docs.python.org/3/library/json.html#module-json"><code>technologies.json</code></a>.</p>
 </div>
   </div>
 </div><div class="baseinstancevariable">
@@ -224,7 +217,7 @@ Map of technology names to technology dicts, as in technologies.json.</li>
   </a>
   <div class="functionHeader">
     categories =
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/9c7e4c12cc174b199d1dcb760c8e8e4614412ee6/Wappalyzer/Wappalyzer.py#L172">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/b1d6504e100ea428717c7db84bd84fc8f8d4bdb5/Wappalyzer/Wappalyzer.py#L172">
       
       (source)
     </a>
@@ -243,7 +236,7 @@ Map of technology names to technology dicts, as in technologies.json.</li>
   </a>
   <div class="functionHeader">
     technologies =
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/9c7e4c12cc174b199d1dcb760c8e8e4614412ee6/Wappalyzer/Wappalyzer.py#L173">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/b1d6504e100ea428717c7db84bd84fc8f8d4bdb5/Wappalyzer/Wappalyzer.py#L173">
       
       (source)
     </a>
@@ -262,7 +255,7 @@ Map of technology names to technology dicts, as in technologies.json.</li>
   </a>
   <div class="functionHeader">
     confidence_regexp =
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/9c7e4c12cc174b199d1dcb760c8e8e4614412ee6/Wappalyzer/Wappalyzer.py#L174">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/b1d6504e100ea428717c7db84bd84fc8f8d4bdb5/Wappalyzer/Wappalyzer.py#L174">
       
       (source)
     </a>
@@ -283,7 +276,7 @@ Map of technology names to technology dicts, as in technologies.json.</li>
     @classmethod<br />
     def
     latest(cls, technologies_file=None):
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/9c7e4c12cc174b199d1dcb760c8e8e4614412ee6/Wappalyzer/Wappalyzer.py#L180">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/b1d6504e100ea428717c7db84bd84fc8f8d4bdb5/Wappalyzer/Wappalyzer.py#L180">
       
       (source)
     </a>
@@ -292,7 +285,7 @@ Map of technology names to technology dicts, as in technologies.json.</li>
     
     
     <div>Construct a Wappalyzer instance using a technologies db path passed in via
-<code>technologies_file</code>, or alternatively the default in <code>data/technologies.json</code>.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">technologies_file</td><td>File path (type: str)</td></tr></table></div>
+<code>technologies_file</code>, or alternatively the default in <code>data/technologies.json</code>.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">technologies_file</td><td>File path (type: <code>str</code>)</td></tr></table></div>
   </div>
 </div><div class="basemethod private">
   
@@ -306,7 +299,7 @@ Map of technology names to technology dicts, as in technologies.json.</li>
     
     def
     _prepare_technology(self, technology):
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/9c7e4c12cc174b199d1dcb760c8e8e4614412ee6/Wappalyzer/Wappalyzer.py#L197">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/b1d6504e100ea428717c7db84bd84fc8f8d4bdb5/Wappalyzer/Wappalyzer.py#L196">
       
       (source)
     </a>
@@ -328,7 +321,7 @@ Map of technology names to technology dicts, as in technologies.json.</li>
     
     def
     _prepare_pattern(self, pattern):
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/9c7e4c12cc174b199d1dcb760c8e8e4614412ee6/Wappalyzer/Wappalyzer.py#L237">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/b1d6504e100ea428717c7db84bd84fc8f8d4bdb5/Wappalyzer/Wappalyzer.py#L236">
       
       (source)
     </a>
@@ -351,7 +344,7 @@ expression.</div>
     
     def
     _has_technology(self, technology, webpage):
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/9c7e4c12cc174b199d1dcb760c8e8e4614412ee6/Wappalyzer/Wappalyzer.py#L264">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/b1d6504e100ea428717c7db84bd84fc8f8d4bdb5/Wappalyzer/Wappalyzer.py#L263">
       
       (source)
     </a>
@@ -373,7 +366,7 @@ expression.</div>
     
     def
     _set_detected_app(self, app, app_type, pattern, value, key=""""""):
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/9c7e4c12cc174b199d1dcb760c8e8e4614412ee6/Wappalyzer/Wappalyzer.py#L312">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/b1d6504e100ea428717c7db84bd84fc8f8d4bdb5/Wappalyzer/Wappalyzer.py#L311">
       
       (source)
     </a>
@@ -395,7 +388,7 @@ expression.</div>
     
     def
     _set_app_version(self, app):
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/9c7e4c12cc174b199d1dcb760c8e8e4614412ee6/Wappalyzer/Wappalyzer.py#L355">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/b1d6504e100ea428717c7db84bd84fc8f8d4bdb5/Wappalyzer/Wappalyzer.py#L354">
       
       (source)
     </a>
@@ -417,7 +410,7 @@ expression.</div>
     
     def
     _get_implied_technologies(self, detected_technologies):
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/9c7e4c12cc174b199d1dcb760c8e8e4614412ee6/Wappalyzer/Wappalyzer.py#L364">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/b1d6504e100ea428717c7db84bd84fc8f8d4bdb5/Wappalyzer/Wappalyzer.py#L363">
       
       (source)
     </a>
@@ -439,7 +432,7 @@ expression.</div>
     
     def
     get_categories(self, tech_name):
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/9c7e4c12cc174b199d1dcb760c8e8e4614412ee6/Wappalyzer/Wappalyzer.py#L401">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/b1d6504e100ea428717c7db84bd84fc8f8d4bdb5/Wappalyzer/Wappalyzer.py#L400">
       
       (source)
     </a>
@@ -447,7 +440,7 @@ expression.</div>
   <div class="docstring functionBody">
     
     
-    <div>Returns a list of the categories for an technology name.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">tech_name</td><td>Tech name (type: str)</td></tr></table></div>
+    <div>Returns a list of the categories for an technology name.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">tech_name</td><td>Tech name (type: <code>str</code>)</td></tr></table></div>
   </div>
 </div><div class="basemethod">
   
@@ -461,7 +454,7 @@ expression.</div>
     
     def
     get_versions(self, app_name):
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/9c7e4c12cc174b199d1dcb760c8e8e4614412ee6/Wappalyzer/Wappalyzer.py#L414">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/b1d6504e100ea428717c7db84bd84fc8f8d4bdb5/Wappalyzer/Wappalyzer.py#L412">
       
       (source)
     </a>
@@ -469,7 +462,7 @@ expression.</div>
   <div class="docstring functionBody">
     
     
-    <div>Retuns a list of the discovered versions for an app name.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">app_name</td><td>App name (type: str)</td></tr></table></div>
+    <div>Retuns a list of the discovered versions for an app name.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">app_name</td><td>App name (type: <code>str</code>)</td></tr></table></div>
   </div>
 </div><div class="basemethod">
   
@@ -483,7 +476,7 @@ expression.</div>
     
     def
     get_confidence(self, app_name):
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/9c7e4c12cc174b199d1dcb760c8e8e4614412ee6/Wappalyzer/Wappalyzer.py#L423">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/b1d6504e100ea428717c7db84bd84fc8f8d4bdb5/Wappalyzer/Wappalyzer.py#L420">
       
       (source)
     </a>
@@ -491,7 +484,7 @@ expression.</div>
   <div class="docstring functionBody">
     
     
-    <div>Returns the total confidence for an app name.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">app_name</td><td>App name (type: str)</td></tr></table></div>
+    <div>Returns the total confidence for an app name.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">app_name</td><td>App name (type: <code>str</code>)</td></tr></table></div>
   </div>
 </div><div class="basemethod">
   
@@ -505,7 +498,7 @@ expression.</div>
     
     def
     analyze(self, webpage):
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/9c7e4c12cc174b199d1dcb760c8e8e4614412ee6/Wappalyzer/Wappalyzer.py#L432">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/b1d6504e100ea428717c7db84bd84fc8f8d4bdb5/Wappalyzer/Wappalyzer.py#L428">
       
       (source)
     </a>
@@ -513,7 +506,7 @@ expression.</div>
   <div class="docstring functionBody">
     
     
-    <div>Return a list of technologylications that can be detected on the web page.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">webpage</td><td>The webpage the analyze (type: WebPage)</td></tr></table></div>
+    <div>Return a list of technologylications that can be detected on the web page.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">webpage</td><td>The Webpage to analyze (type: <code>WebPage</code>)</td></tr></table></div>
   </div>
 </div><div class="basemethod">
   
@@ -527,7 +520,7 @@ expression.</div>
     
     def
     analyze_with_versions(self, webpage):
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/9c7e4c12cc174b199d1dcb760c8e8e4614412ee6/Wappalyzer/Wappalyzer.py#L449">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/b1d6504e100ea428717c7db84bd84fc8f8d4bdb5/Wappalyzer/Wappalyzer.py#L444">
       
       (source)
     </a>
@@ -535,7 +528,7 @@ expression.</div>
   <div class="docstring functionBody">
     
     
-    <div>Return a list of applications and versions that can be detected on the web page.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">webpage</td><td>The webpage the analyze (type: WebPage)</td></tr></table></div>
+    <div>Return a list of applications and versions that can be detected on the web page.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">webpage</td><td>The Webpage to analyze (type: <code>WebPage</code>)</td></tr></table></div>
   </div>
 </div><div class="basemethod">
   
@@ -549,7 +542,7 @@ expression.</div>
     
     def
     analyze_with_categories(self, webpage):
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/9c7e4c12cc174b199d1dcb760c8e8e4614412ee6/Wappalyzer/Wappalyzer.py#L465">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/b1d6504e100ea428717c7db84bd84fc8f8d4bdb5/Wappalyzer/Wappalyzer.py#L459">
       
       (source)
     </a>
@@ -564,7 +557,7 @@ expression.</div>
 <span class="py-output">'Amazon Web Services': {'categories': ['PaaS']},</span>
 <span class="py-output">'Azure CDN': {'categories': ['CDN']},</span>
 <span class="py-output">'Docker': {'categories': ['Containers']}}</span>
-</pre><table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">webpage</td><td>The webpage the analyze (type: WebPage)</td></tr></table></div>
+</pre><table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">webpage</td><td>The Webpage to analyze (type: <code>WebPage</code>)</td></tr></table></div>
   </div>
 </div><div class="basemethod">
   
@@ -578,7 +571,7 @@ expression.</div>
     
     def
     analyze_with_versions_and_categories(self, webpage):
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/9c7e4c12cc174b199d1dcb760c8e8e4614412ee6/Wappalyzer/Wappalyzer.py#L488">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/b1d6504e100ea428717c7db84bd84fc8f8d4bdb5/Wappalyzer/Wappalyzer.py#L481">
       
       (source)
     </a>
@@ -596,7 +589,7 @@ expression.</div>
 <span class="py-output">'PHP': {'categories': ['Programming languages'], 'versions': ['5.6.40']},</span>
 <span class="py-output">'WordPress': {'categories': ['CMS', 'Blogs'], 'versions': ['5.4.2']},</span>
 <span class="py-output">'Yoast SEO': {'categories': ['SEO'], 'versions': ['14.6.1']}}</span>
-</pre><table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">webpage</td><td>The webpage the analyze (type: WebPage)</td></tr></table></div>
+</pre><table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">webpage</td><td>The Webpage to analyze (type: <code>WebPage</code>)</td></tr></table></div>
   </div>
 </div><div class="basemethod private">
   
@@ -610,7 +603,7 @@ expression.</div>
     
     def
     _sort_app_versions(self, version_a, version_b):
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/9c7e4c12cc174b199d1dcb760c8e8e4614412ee6/Wappalyzer/Wappalyzer.py#L514">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/b1d6504e100ea428717c7db84bd84fc8f8d4bdb5/Wappalyzer/Wappalyzer.py#L506">
       
       (source)
     </a>
@@ -632,7 +625,7 @@ expression.</div>
     
     def
     _cmp_to_key(self, mycmp):
-    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/9c7e4c12cc174b199d1dcb760c8e8e4614412ee6/Wappalyzer/Wappalyzer.py#L517">
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/python-Wappalyzer/tree/b1d6504e100ea428717c7db84bd84fc8f8d4bdb5/Wappalyzer/Wappalyzer.py#L509">
       
       (source)
     </a>
@@ -646,7 +639,7 @@ expression.</div>
 
       </div>
       <address>
-        <a href="index.html">API Documentation</a> for <a href="https://github.com/tristanlatr/python-Wappalyzer">python-Wappalyzer</a>, generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a> 20.7.1 at 2020-11-09 01:25:49.
+        <a href="index.html">API Documentation</a> for <a href="https://github.com/tristanlatr/python-Wappalyzer">python-Wappalyzer</a>, generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a> 20.7.1 at 2020-11-09 01:42:06.
       </address>
 
     </div>
