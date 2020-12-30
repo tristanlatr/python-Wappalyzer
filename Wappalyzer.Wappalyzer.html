@@ -36,7 +36,7 @@
       </div>
 
       <div class="extrasDocstring">
-        <p><code><span class="py-keyword">class</span> Wappalyzer.Wappalyzer: <a href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L157">(source)</a></code></p>
+        <p><code><span class="py-keyword">class</span> Wappalyzer.Wappalyzer: <a href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L160">(source)</a></code></p>
         <p><a href="classIndex.html#Wappalyzer.Wappalyzer">View In Hierarchy</a></p>
       </div>
 
@@ -56,8 +56,7 @@ results = wappalyzer.analyze_with_categories(webpage)</pre><p>Here is how you ca
 <span class="py-keyword">from</span> Wappalyzer <span class="py-keyword">import</span> Wappalyzer, WebPage
 wappalyzer = Wappalyzer.latest()
 webpage = WebPage.new_from_url(<span class="py-string">'http://exemple.com'</span>, headers={<span class="py-string">'User-Agent'</span>: <span class="py-string">'Custom user agent'</span>})
-wappalyzer.analyze_with_categories(webpage)</pre><p><em>New in version 0.4.0</em></p>
-</div>
+wappalyzer.analyze_with_categories(webpage)</pre></div>
       </div>
 
       <div id="splitTables">
@@ -123,6 +122,11 @@ wappalyzer.analyze_with_categories(webpage)</pre><p><em>New in version 0.4.0</em
     <td>Instance Variable</td>
     <td><a href="Wappalyzer.Wappalyzer.html#_confidence_regexp" class="code" data-type="Instance Variable">_confidence_regexp</a></td>
     <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="staticmethod private">
+    
+    <td>Static Method</td>
+    <td><a href="Wappalyzer.Wappalyzer.html#_find_files" class="code" data-type="Static Method">_find_files</a></td>
+    <td><span class="undocumented">No summary</span></td>
   </tr><tr class="method private">
     
     <td>Method</td>
@@ -183,7 +187,7 @@ wappalyzer.analyze_with_categories(webpage)</pre><p><em>New in version 0.4.0</em
   <div class="functionHeader">
     
     def __init__(self, categories, technologies):
-    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L189">
+    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L190">
       
       (source)
     </a>
@@ -206,7 +210,7 @@ wappalyzer.analyze_with_categories(webpage)</pre><p><em>New in version 0.4.0</em
   <div class="functionHeader">
     
     categories =
-    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L198">
+    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L199">
       
       (source)
     </a>
@@ -227,7 +231,7 @@ wappalyzer.analyze_with_categories(webpage)</pre><p><em>New in version 0.4.0</em
   <div class="functionHeader">
     
     technologies =
-    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L199">
+    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L200">
       
       (source)
     </a>
@@ -248,7 +252,7 @@ wappalyzer.analyze_with_categories(webpage)</pre><p><em>New in version 0.4.0</em
   <div class="functionHeader">
     
     _confidence_regexp =
-    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L200">
+    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L201">
       
       (source)
     </a>
@@ -269,7 +273,7 @@ wappalyzer.analyze_with_categories(webpage)</pre><p><em>New in version 0.4.0</em
   <div class="functionHeader">
     @classmethod<br />
     def latest(cls, technologies_file=None, update=False):
-    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L206">
+    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L207">
       
       (source)
     </a>
@@ -279,13 +283,40 @@ wappalyzer.analyze_with_categories(webpage)</pre><p><em>New in version 0.4.0</em
     
     <div><p>Construct a Wappalyzer instance.</p>
 <p>Use <tt class="rst-docutils literal">update=True</tt> to download the very latest file from internet.
+Do not update if the file has already been updated in the last 24 hours.
 <em>New in version 0.4.0</em></p>
 <p>Use <tt class="rst-docutils literal"><span class="pre">technologies_file=/some/path/technologies.json</span></tt> to load a
 custom technologies file.</p>
-<p>Use no argument to load the default <tt class="rst-docutils literal">data/technologies.json</tt> file
+<p>If no arguments is passed, load the default <tt class="rst-docutils literal">data/technologies.json</tt> file
 inside the package ressource.</p>
 <table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">technologies_file</td><td>File path (type: <code><a href="https://docs.python.org/3/library/stdtypes.html#str" class="code">str</a></code>)</td></tr><tr><td></td><td class="fieldArg">update</td><td>Download and use the latest <tt class="rst-docutils literal">technologies.json</tt> file
 from <a class="rst-reference external" href="https://github.com/AliasIO/wappalyzer" target="_top">AliasIO/wappalyzer</a> repository. (type: <code><a href="https://docs.python.org/3/library/functions.html#bool" class="code">bool</a></code>)</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2"><span class="undocumented">Undocumented</span> (type: <code><a href="Wappalyzer.Wappalyzer.html" class="code">Wappalyzer</a></code>)</td></tr></table></div>
+  </div>
+</div><div class="basestaticmethod private">
+  
+  <a name="Wappalyzer.Wappalyzer._find_files">
+    
+  </a>
+  <a name="_find_files">
+    
+  </a>
+  <div class="functionHeader">
+    @staticmethod<br />
+    def _find_files(env_location, potential_files, default_content='', create=False):
+    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L271">
+      
+      (source)
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div>Find existent files based on folders name and file names.
+Arguments:
+- <code>env_location</code>: list of environment variable to use as a base path. Exemple: ['HOME', 'XDG_CONFIG_HOME', 'APPDATA', 'PWD']
+- <code>potential_files</code>: list of filenames. Exemple: ['.myapp/conf.ini',]
+- <code>default_content</code>: Write default content if the file does not exist
+- <code>create</code>: Create the file in the first existing env_location with default content if the file does not exist<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">env_location</td><td><span class="undocumented">Undocumented</span> (type: <code>List[<a href="https://docs.python.org/3/library/stdtypes.html#str" class="code">str</a>]</code>)</td></tr><tr><td></td><td class="fieldArg">potential_files</td><td><span class="undocumented">Undocumented</span> (type: <code>List[<a href="https://docs.python.org/3/library/stdtypes.html#str" class="code">str</a>]</code>)</td></tr><tr><td></td><td class="fieldArg">default_content</td><td><span class="undocumented">Undocumented</span> (type: <code><a href="https://docs.python.org/3/library/stdtypes.html#str" class="code">str</a></code>)</td></tr><tr><td></td><td class="fieldArg">create</td><td><span class="undocumented">Undocumented</span> (type: <code><a href="https://docs.python.org/3/library/functions.html#bool" class="code">bool</a></code>)</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2"><span class="undocumented">Undocumented</span> (type: <code>List[<a href="https://docs.python.org/3/library/stdtypes.html#str" class="code">str</a>]</code>)</td></tr></table></div>
   </div>
 </div><div class="basemethod private">
   
@@ -298,7 +329,7 @@ from <a class="rst-reference external" href="https://github.com/AliasIO/wappalyz
   <div class="functionHeader">
     
     def _prepare_technology(self, technology):
-    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L243">
+    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L309">
       
       (source)
     </a>
@@ -319,7 +350,7 @@ from <a class="rst-reference external" href="https://github.com/AliasIO/wappalyz
   <div class="functionHeader">
     
     def _prepare_pattern(self, pattern):
-    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L283">
+    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L349">
       
       (source)
     </a>
@@ -341,7 +372,7 @@ expression.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName
   <div class="functionHeader">
     
     def _has_technology(self, technology, webpage):
-    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L311">
+    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L377">
       
       (source)
     </a>
@@ -362,7 +393,7 @@ expression.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName
   <div class="functionHeader">
     
     def _set_detected_app(self, app, app_type, pattern, value, key=''):
-    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L359">
+    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L425">
       
       (source)
     </a>
@@ -383,7 +414,7 @@ expression.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName
   <div class="functionHeader">
     
     def _set_app_version(self, app):
-    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L402">
+    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L468">
       
       (source)
     </a>
@@ -406,7 +437,7 @@ expression.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName
   <div class="functionHeader">
     
     def _get_implied_technologies(self, detected_technologies):
-    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L413">
+    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L479">
       
       (source)
     </a>
@@ -427,7 +458,7 @@ expression.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName
   <div class="functionHeader">
     
     def get_categories(self, tech_name):
-    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L450">
+    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L516">
       
       (source)
     </a>
@@ -448,7 +479,7 @@ expression.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName
   <div class="functionHeader">
     
     def get_versions(self, app_name):
-    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L462">
+    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L528">
       
       (source)
     </a>
@@ -469,7 +500,7 @@ expression.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName
   <div class="functionHeader">
     
     def get_confidence(self, app_name):
-    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L470">
+    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L536">
       
       (source)
     </a>
@@ -490,7 +521,7 @@ expression.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName
   <div class="functionHeader">
     
     def analyze(self, webpage):
-    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L478">
+    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L544">
       
       (source)
     </a>
@@ -511,7 +542,7 @@ expression.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName
   <div class="functionHeader">
     
     def analyze_with_versions(self, webpage):
-    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L494">
+    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L560">
       
       (source)
     </a>
@@ -532,7 +563,7 @@ expression.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName
   <div class="functionHeader">
     
     def analyze_with_categories(self, webpage):
-    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L509">
+    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L575">
       
       (source)
     </a>
@@ -560,7 +591,7 @@ expression.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName
   <div class="functionHeader">
     
     def analyze_with_versions_and_categories(self, webpage):
-    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L531">
+    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L597">
       
       (source)
     </a>
@@ -591,7 +622,7 @@ expression.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName
   <div class="functionHeader">
     
     def _sort_app_versions(self, version_a, version_b):
-    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L556">
+    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L622">
       
       (source)
     </a>
@@ -612,7 +643,7 @@ expression.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName
   <div class="functionHeader">
     
     def _cmp_to_key(self, mycmp):
-    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L559">
+    <a class="functionSourceLink" href="https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA/Wappalyzer/Wappalyzer.py#L625">
       
       (source)
     </a>
@@ -626,7 +657,7 @@ expression.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName
 
       </div>
       <address>
-        <a href="index.html">API Documentation</a> for <a href="https://github.com/$GITHUB_REPOSITORY">python-Wappalyzer</a>, generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a> 20.12.1 at 2020-12-30 00:11:43.
+        <a href="index.html">API Documentation</a> for <a href="https://github.com/$GITHUB_REPOSITORY">python-Wappalyzer</a>, generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a> 20.12.1 at 2020-12-30 01:09:18.
       </address>
 
     </div>
